@@ -3,7 +3,7 @@
 </div>
 
 <p align="center">
-  <a href="README.md">Español</a> · <strong>English</strong>
+  <a href="README.es.md">Español</a> · <strong>English</strong>
 </p>
 
 ---
