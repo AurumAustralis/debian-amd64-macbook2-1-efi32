@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="macbook21.png" alt="Apple MacBook2,1" width="650">
+  <img src="macbook21.png" alt="Apple MacBook 2.1" width="650">
 </div>
 
 <p align="center">
@@ -8,20 +8,20 @@
 
 ---
 
-# Debian 64 bits en MacBook2,1 con EFI de 32 bits usando Ventoy
+# Debian 64 bits en MacBook 2.1 con EFI de 32 bits usando Ventoy
 
 Guía práctica para instalar **Debian GNU/Linux de 64 bits (`amd64`)** en una **Apple MacBook 2.1** de 2006/2007, equipada con un procesador Intel Core 2 Duo de 64 bits pero con firmware **EFI de 32 bits**.
 
 El procedimiento utiliza **Ventoy** para crear un pendrive capaz de arrancar en modo **IA32 UEFI** y cargar la imagen normal de Debian `amd64`.
 
 > [!IMPORTANT]
-> Esta guía está basada en una instalación realizada y probada sobre una **MacBook2,1**. Ventoy considera experimental su soporte IA32 UEFI, por lo que el comportamiento puede variar en otros equipos Apple antiguos.
+> Esta guía está basada en una instalación realizada y probada sobre una **MacBook 2.1**. Ventoy considera experimental su soporte IA32 UEFI, por lo que el comportamiento puede variar en otros equipos Apple antiguos.
 
 ---
 
 ## El problema
 
-La MacBook2,1 tiene una combinación poco habitual:
+La MacBook 2.1 tiene una combinación poco habitual:
 
 | Componente | Arquitectura |
 |---|---|
@@ -37,7 +37,7 @@ Ventoy incorpora soporte para **IA32 UEFI** y permite utilizar una ISO Debian `a
 
 ## Hardware probado
 
-- Apple MacBook2,1.
+- Apple MacBook 2.1.
 - Procesador Intel Core 2 Duo.
 - EFI de 32 bits.
 - Pendrive USB 2.0.
@@ -51,7 +51,7 @@ Ventoy incorpora soporte para **IA32 UEFI** y permite utilizar una ISO Debian `a
 
 ## Qué se necesita
 
-1. Una MacBook2,1.
+1. Una MacBook 2.1.
 2. Un pendrive USB. Se recomienda **USB 2.0** para estos equipos antiguos.
 3. Otra computadora con:
    - Linux, o
