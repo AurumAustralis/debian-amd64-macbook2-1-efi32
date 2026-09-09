@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="macbook21.png" alt="Apple MacBook2,1" width="650">
+  <img src="macbook21.png" alt="Apple MacBook 21" width="650">
 </div>
 
 <p align="center">
@@ -8,20 +8,20 @@
 
 ---
 
-# Debian 64-bit on MacBook2,1 with 32-bit EFI using Ventoy
+# Debian 64-bit on MacBook 2.1 with 32-bit EFI using Ventoy
 
 A practical guide to installing **64-bit Debian GNU/Linux (`amd64`)** on an **Apple MacBook 2.1** from 2006/2007, equipped with a 64-bit Intel Core 2 Duo processor but a **32-bit EFI firmware**.
 
 This procedure uses **Ventoy** to create a USB drive capable of booting in **IA32 UEFI** mode and loading the standard Debian `amd64` image.
 
 > [!IMPORTANT]
-> This guide is based on an installation performed and tested on a **MacBook2,1**. Ventoy considers IA32 UEFI support experimental, so behavior may vary on other old Intel-based Apple computers.
+> This guide is based on an installation performed and tested on a **MacBook 2.1**. Ventoy considers IA32 UEFI support experimental, so behavior may vary on other old Intel-based Apple computers.
 
 ---
 
 ## The problem
 
-The MacBook2,1 has an unusual combination:
+The MacBook 2.1 has an unusual combination:
 
 | Component | Architecture |
 |---|---|
@@ -37,7 +37,7 @@ Ventoy includes **IA32 UEFI** support and makes it possible to use a Debian `amd
 
 ## Tested hardware
 
-- Apple MacBook2,1.
+- Apple MacBook.
 - Intel Core 2 Duo processor.
 - 32-bit EFI.
 - USB 2.0 flash drive.
@@ -51,7 +51,7 @@ Ventoy includes **IA32 UEFI** support and makes it possible to use a Debian `amd
 
 ## Requirements
 
-1. A MacBook2,1.
+1. A MacBook 2.1.
 2. A USB flash drive. **USB 2.0** is recommended for this old hardware.
 3. Another computer running:
    - Linux, or
@@ -232,7 +232,7 @@ That's all. You do not need Rufus, `dd`, Etcher, or to extract the ISO contents.
 
 ---
 
-# Booting the MacBook2,1
+# Booting the MacBook 2.1
 
 ## 1. Connect the USB drive
 
@@ -280,7 +280,7 @@ debian-13.x.x-amd64-netinst.iso
 
 Press **Enter** and continue with the Debian installer.
 
-Although the EFI firmware is 32-bit, the installed Debian system will be **64-bit (`amd64`)**, because the MacBook2,1 Core 2 Duo processor supports x86-64.
+Although the EFI firmware is 32-bit, the installed Debian system will be **64-bit (`amd64`)**, because the MacBook 2.1 Core 2 Duo processor supports x86-64.
 
 ---
 
@@ -393,7 +393,7 @@ Then try booting again with the USB drive connected.
 
 ## Reset the SMC
 
-The MacBook2,1 normally uses a removable battery.
+The MacBook 2.1 normally uses a removable battery.
 
 ### Mac with removable battery
 
@@ -433,14 +433,14 @@ If a problem occurs, boot again from the Ventoy USB drive and use Debian rescue 
 
 # Why this works
 
-The MacBook2,1 uses a 64-bit processor, but Apple equipped this model with 32-bit EFI firmware.
+The MacBook 2.1 uses a 64-bit processor, but Apple equipped this model with 32-bit EFI firmware.
 
 The limitation is not the processor's ability to run 64-bit Debian. The problem is the first stage of the boot process.
 
 Conceptually, the boot chain is:
 
 ```text
-MacBook2,1
+MacBook 2.1
     │
     ├── 32-bit Apple EFI
     │
@@ -464,7 +464,7 @@ Ventoy acts as a bridge between the Mac's IA32 firmware and the Debian `amd64` i
 - Ventoy - IA32 UEFI Support: https://www.ventoy.net/en/doc_ia32.html
 - Debian - Download Debian: https://www.debian.org/download
 - Debian Wiki - UEFI: https://wiki.debian.org/UEFI
-- Debian Wiki - Installing Debian on MacBook2,1: https://wiki.debian.org/InstallingDebianOn/Apple/MacBook/2-1
+- Debian Wiki - Installing Debian on MacBook 2.1: https://wiki.debian.org/InstallingDebianOn/Apple/MacBook/2-1
 - Apple - Startup key combinations: https://support.apple.com/102603
 
 ---
@@ -474,7 +474,7 @@ Ventoy acts as a bridge between the Mac's IA32 firmware and the Debian `amd64` i
 The final goal is:
 
 ```text
-Apple MacBook2,1
+Apple MacBook 2.1
 x86-64 CPU
 32-bit IA32 EFI
 64-bit Debian amd64
