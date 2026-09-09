@@ -10,7 +10,7 @@
 
 # Debian 64-bit on MacBook2,1 with 32-bit EFI using Ventoy
 
-A practical guide to installing **64-bit Debian GNU/Linux (`amd64`)** on an **Apple MacBook2,1** from 2006/2007, equipped with a 64-bit Intel Core 2 Duo processor but a **32-bit EFI firmware**.
+A practical guide to installing **64-bit Debian GNU/Linux (`amd64`)** on an **Apple MacBook 2.1** from 2006/2007, equipped with a 64-bit Intel Core 2 Duo processor but a **32-bit EFI firmware**.
 
 This procedure uses **Ventoy** to create a USB drive capable of booting in **IA32 UEFI** mode and loading the standard Debian `amd64` image.
 
